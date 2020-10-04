@@ -12,10 +12,10 @@ export class StudentResolver {
   //   return this.lessonService.getLesson(id);
   // }
 
-  // @Query(returns => [LessonType])
-  // lessons() {
-  //   return this.lessonService.getLessons()
-  // }
+  @Query(returns => [StudentType])
+  students() {
+    return this.studentService.getStudents();
+  }
 
   @Mutation(returns => StudentType)
   createStudent(
